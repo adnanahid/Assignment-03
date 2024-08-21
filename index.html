@@ -23,7 +23,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                green: '#abef5f',
               },
               fontFamily: {
                 manrope: 'Manrope',
@@ -33,7 +33,58 @@
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <nav class="navbar bg-base-100 mt-5">
+            <div class="navbar-start">
+              <div class="flex justify-center gap-2">
+                <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-[#abef5f]"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <a class="text-2xl font-bold">Rinterio</a>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                  <li><a>Service</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>contuct us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-2">
+                <div class="dropdown bg-green rounded-full">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>contuct us</a></li>
+                    </ul>
+                  </div>
+              <div class="hidden lg:flex bg-green justify-center items-center gap-2 px-5 py-1 rounded-3xl">
+                <a class="font-bold text-base">Book Consult</a>
+                <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-black text-white"><i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
     
 </body>
 </html>
