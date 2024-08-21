@@ -23,7 +23,9 @@
           theme: {
             extend: {
               colors: {
-                green: '#abef5f',
+                commongreen: '#abef5f',
+                lightgreen: '#d4f6ae',
+                f6f6f6: '#F6F6F6'
               },
               fontFamily: {
                 manrope: 'Manrope',
@@ -33,12 +35,12 @@
         }
       </script>
 </head>
-<body class="font-manrope">
-    <header class="container mx-auto">
+<body class="font-manrope px-2">
+    <header class="container mx-auto border">
         <nav class="navbar bg-base-100 mt-5">
             <div class="navbar-start">
               <div class="flex justify-center gap-2">
-                <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-[#abef5f]"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-commongreen"><i class="fa-solid fa-arrow-right-long"></i></div>
                 <a class="text-2xl font-bold">Rinterio</a>
               </div>
             </div>
@@ -52,7 +54,7 @@
               </ul>
             </div>
             <div class="relative navbar-end space-x-2">
-                <div class="dropdown bg-green rounded-full">
+                <div class="dropdown bg-commongreen rounded-full">
                     <div tabindex="0" role="button" class="h-8 w-8 flex justify-center items-center lg:hidden">
                       <i class="fa-solid fa-bars"></i>
                     </div>
@@ -66,14 +68,29 @@
                       <li><a>contuct us</a></li>
                     </ul>
                   </div>
-              <div class="hidden lg:flex bg-green justify-center items-center gap-2 px-5 py-1 rounded-3xl">
+              <div class="hidden lg:flex bg-commongreen justify-center items-center gap-2 px-5 py-1 rounded-3xl">
                 <a class="font-bold text-base">Book Consult</a>
                 <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-black text-white"><i class="fa-solid fa-arrow-right-long"></i>
                 </div>
               </div>
             </div>
         </nav>
+        <section class="container mx-auto text-center space-y-8 pb-24">
+          <div>
+            <img src="/assets/banner.png" alt="" class="mx-auto">
+          </div>
+          <div class=" space-y-5">
+            <h1 class="text-2xl lg:text-5xl font-extrabold mx-auto w-11/12">A barn house of this design has a striking appearance</h1>
+            <p class="w-8/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="flex btn rounded-3xl bg-lightgreen mx-auto">
+               <p class="font-bold text-base">View Details</p>
+               <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-commongreen"><i class="fa-solid fa-arrow-right-long"></i></div></button>
+          </div>
+        </section>
     </header>
+    <main>
+      
+    </main>
     
 </body>
 </html>
