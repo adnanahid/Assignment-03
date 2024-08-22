@@ -25,7 +25,8 @@
               colors: {
                 commongreen: '#abef5f',
                 lightgreen: '#d4f6ae',
-                f6f6f6: '#F6F6F6'
+                f6f6f6: '#F6F6F6',
+                footerbg: '#1c1c1c'
               },
               fontFamily: {
                 manrope: 'Manrope',
@@ -35,7 +36,7 @@
         }
       </script>
 </head>
-<body class="font-manrope">
+<body class="font-manrope max-w-screen-2xl mx-auto">
     <header class="max-w-screen-xl mx-auto">
         <nav class="navbar bg-base-100 mt-5">
             <div class="navbar-start">
@@ -104,11 +105,8 @@
           </div>
         </section>
     </header>
-    <main class="max-w-screen-xl mx-auto bg-f6f6f6 lg:px-5 px-2">
-
-      <!-- about us section start -->
-
-       <section class="space-y-5 lg:py-20 py-7">
+    <main class="max-w-screen-2xl mx-auto bg-f6f6f6 lg:px-0 px-2">
+      <section class=" max-w-screen-xl mx-auto space-y-5 lg:py-20 py-7 bg-f6f6f6">
         <div class="hidden lg:block">
           <img src="./assets/Vector.png" alt="">
         </div>
@@ -154,11 +152,11 @@
             <img src="./assets/Rectangle.png" alt="">
           </div>
         </div>
-       </section>
+      </section>
 
-       <!-- Work Process section start -->
+      <!-- Work Process section start -->
 
-       <section class="bg-f6f6f6 space-y-5 lg:py-20 py-7">
+      <section class="max-w-screen-xl mx-auto bg-f6f6f6 space-y-5 lg:py-20 py-7">
           <div class="space-y-5">
             <button class="px-5 py-3 bg-white rounded-3xl font-bold flex justify-center items-center gap-3 mx-auto">
               <i class="fa-solid fa-arrow-right-long"></i> 
@@ -210,7 +208,7 @@
             </div>        
           </div>
         </section>       
-        <section class="lg:py-20 py-5">
+        <section class="max-w-screen-xl mx-auto lg:py-20 py-5 bg-f6f6f6">
           <div class="space-y-5 pb-8">
             <button class="px-5 py-3 bg-lightgreen rounded-3xl font-bold flex justify-center items-center gap-3 mx-auto">
               <i class="fa-solid fa-arrow-right-long"></i> 
@@ -279,7 +277,7 @@
 
         <!-- Rinterio News section start -->
 
-        <section class="py-12 lg:py-20">
+        <section class="max-w-screen-xl mx-auto py-12 lg:py-20 bg-f6f6f6">
           <div class="space-y-5 pb-8">
             <button class="px-5 py-3 bg-lightgreen rounded-3xl font-bold flex justify-center items-center gap-3 mx-auto">
               <i class="fa-solid fa-arrow-right-long"></i> 
@@ -379,7 +377,7 @@
 
         <!-- Let’s Connect section start -->
 
-        <section style="background-image: url(/assets/bg.jpg);" class="py-12 lg:py-20 bg-no-repeat bg-cover">
+        <section style="background-image: url(/assets/bg.jpg);" class="py-12 lg:py-20 bg-no-repeat bg-cover max-w-screen-2xl">
           <div class="space-y-5 pb-8">
             <button class="px-5 py-3 bg-lightgreen rounded-3xl font-bold flex justify-center items-center gap-3 mx-auto">
               <i class="fa-solid fa-arrow-right-long"></i> 
@@ -407,9 +405,39 @@
               <a class="font-bold text-xl">Book Consult</a>
               <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-black text-white"><i class="fa-solid fa-arrow-right-long"></i>
             </div>
-
           </div>
         </section>
+        <footer class="max-w-screen-2xl bg-footerbg">
+          <div class="flex justify-center items-center gap-2 pt-28 pb-10">
+            <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-commongreen">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+            <a class="text-4xl font-bold text-white">
+              Rinterio
+            </a>
+          </div>
+          <p class="text-white lg:w-1/2 mx-auto text-center pb-10">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <div class="text-white w-6/12 mx-auto">
+            <ul class="flex justify-between lg:flex-row flex-col text-center gap-5">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contuct Us</a></li>
+            </ul>
+          </div>
+          <div class="py-16">
+            <button class="flex space-x-2 bg-commongreen gap-2 px-5 py-1 mx-auto rounded-3xl justify-center items-center ">
+              <a class="font-bold text-xl">Book Consult</a>
+              <div class="-rotate-45 flex justify-center items-center h-7 w-7 rounded-full bg-black text-white"><i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </button>
+          </div>
+        </footer>
+
+       
     </main>    
 </body>
 </html>
